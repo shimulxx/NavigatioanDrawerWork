@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cartExplain"
+        android:text="Items on your cart"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviewsRecView_cart_list"
+        android:layout_above="@+id/textSumCart"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/cartExplain"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="no items in your cart"
+        android:id="@+id/textNoItemListCart"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUM: "
+        android:layout_above="@id/btnNextCart"
+        android:layout_marginBottom="20dp"
+        android:textColor="#C71585"
+        android:layout_marginEnd="5dp"
+        android:id="@+id/sumExplain"
+        android:layout_toStartOf="@+id/textSumCart"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#C71585"
+        android:textSize="16sp"
+        android:layout_above="@+id/btnNextCart"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentEnd="true"
+        android:text="0 $"
+        android:id="@+id/textSumCart"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNextCart"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="next"/>
+
+</RelativeLayout>
