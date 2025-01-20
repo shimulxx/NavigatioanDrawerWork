@@ -1,13 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.navigtiondrawerwork"
-        minSdkVersion 23
-        targetSdkVersion 29
+        minSdkVersion 27
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 

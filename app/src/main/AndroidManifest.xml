@@ -19,7 +19,8 @@
             android:name=".Models.SearchActivity"
             android:windowSoftInputMode="adjustPan|adjustResize" />
         <activity android:name=".Models.GroceryItemActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
